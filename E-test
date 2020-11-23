@@ -1,0 +1,135 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Colaboratory へようこそ",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/cava-Naoki/Machine-Learning/blob/master/E-test\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "bQx1deA05fJM"
+      },
+      "source": [
+        "step_function"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "h-keVYiu5smN"
+      },
+      "source": [
+        "def step_function(x):\n",
+        "    return np.array(x > 0, dtype=np.int)\n"
+      ],
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Y3LoycO_7RQ6"
+      },
+      "source": [
+        "sigmoid_function"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vUdOTK786Le1"
+      },
+      "source": [
+        "def sigmoid(x):\n",
+        "    return 1/(1 + np.exp(-x))"
+      ],
+      "execution_count": 3,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wloZemVF-28C"
+      },
+      "source": [
+        "tanh_function"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "PA2SEAHdlqZt"
+      },
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "zB-6n9Zb9LDQ"
+      },
+      "source": [
+        "def tanh(x):\n",
+        "    return np.tanh(x)"
+      ],
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Mn11i1Dx_LWI"
+      },
+      "source": [
+        "ReLU_function (xはベクトル)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "VI1YQ8C6_GiW"
+      },
+      "source": [
+        "def relu(x):\n",
+        "    return np.maximum(0, x)"
+      ],
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "f38H58xo_beV"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
